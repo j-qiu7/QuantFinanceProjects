@@ -143,12 +143,12 @@ x_values_1 = np.linspace(-5, 5, 1000)
 normalDist = [stats.norm(x, 1) for x in x_values_1]
 y_1 = np.array([dist.cdf(1) - dist.cdf(0)
                for dist in normalDist])
-plt.plot(x_values_1, y_1, "r")
-plt.show()
-
 df = pd.DataFrame({"x": x_values_1, "y": y_1})
 normChart = alt.Chart(df).mark_line().encode(
     x = "x",
     y = "y"
 )
 altair_viewer.show(normChart)
+
+x_values_1 = np.linspace(-5, 5, 1000)
+dist = stats.norm(0,1)
