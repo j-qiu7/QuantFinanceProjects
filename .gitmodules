@@ -1,0 +1,3 @@
+[submodule "PythonCharmers/QuantFinance"]
+	path = PythonCharmers/QuantFinance
+	url = git@github.com:PythonCharmers/QuantFinance.git
